@@ -1,0 +1,9 @@
+# Use the official phpMyAdmin image as the base image
+FROM phpmyadmin/phpmyadmin:latest
+
+# (Optional) Set environment variables if needed
+ENV PMA_HOST=mysql-server
+ENV PMA_PORT=3306
+
+# (Optional) Add custom configurations or files if needed
+# COPY ./config.inc.php /etc/phpmyadmin/config.inc.php
