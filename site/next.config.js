@@ -4,7 +4,7 @@ const nextConfig = {
   env: {
     name: 'KMRSolutions Kasm Registry',
     description: 'KMRSolutions store for Kasm supported workspaces.',
-    icon: '/img/logo.svg',
+    icon: 'https://www.kmrsolutions.co.uk/assets/images/logo1.png',
     listUrl: 'https://kevinrook.github.io/kasm-registry/',
     contactUrl: 'https://github.com/kevinrook/kasm-registry/issues',
   },
