@@ -1,9 +1,19 @@
-# Use the official phpMyAdmin image as the base image
-FROM phpmyadmin/phpmyadmin:latest
-
-# (Optional) Set environment variables if needed
-ENV PMA_HOST=mysql-server
-ENV PMA_PORT=3306
-
-# (Optional) Add custom configurations or files if needed
-# COPY ./config.inc.php /etc/phpmyadmin/config.inc.php
+{
+    "name": "phpMyAdmin Workspace",
+    "description": "A Kasm Workspace for phpMyAdmin",
+    "max_users": 1,
+    "workspace_app": {
+      "name": "Docker",
+      "version": "latest",
+      "settings": {
+        "image": "phpmyadmin/phpmyadmin",
+        "ports": [
+          {
+            "internal": 80,
+            "external": 8080
+          }
+        ]
+      }
+    }
+  }
+  
