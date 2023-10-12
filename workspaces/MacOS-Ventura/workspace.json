@@ -1,7 +1,8 @@
 {
-    "name": "MacOS-Ventura",
-    "description": "A Kasm Workspace for docker-osx/Ventura",
+    "name": "macOS Ventura Workspace",
+    "description": "A Kasm Workspace for macOS-Ventura using Docker",
     "max_users": 1,
+    "compatibility": "1.14.x",
     "workspace_app": {
       "name": "Docker",
       "version": "latest",
@@ -13,7 +14,9 @@
             "external": 50922
           }
         ],
-        "devices": ["/dev/kvm"],
+        "devices": [
+          "/dev/kvm"
+        ],
         "volumes": [
           {
             "host_path": "/tmp/.X11-unix",
@@ -25,15 +28,6 @@
           "GENERATE_UNIQUE": "true",
           "MASTER_PLIST_URL": "https://raw.githubusercontent.com/sickcodes/osx-serial-generator/master/config-custom.plist"
         }
-        "friendly_name": "Visual Studio Code",
-        "architecture": [
-          "amd64",
-          "arm64"
-        ],
-        "compatibility": [
-            "1.13.x",
-            "1.14.x"
-          ],
       }
     }
   }
